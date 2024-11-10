@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicca sull'Immagine Corretta!</title>
+    <link rel="stylesheet" href="telaAssociacao_Css.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Clique na Imagem Certa!</h1>
+            <p>Escolha a imagem que corresponde à palavra exibida.</p>
+        </header>
+        <div class="game-area">
+            <div class="word-container">
+                <p id="current-word">matita</p>
+            </div>
+            <div class="images-container">
+                <div class="image-option" data-word="matita">
+                    <img src="../Images/lapis1.jpg" alt="Matita">
+                </div>
+                <div class="image-option" data-word="penna ">
+                    <img src="../Images/Caneta.jpeg" alt="Penna ">
+                </div>
+                <div class="image-option" data-word="gomma">
+                    <img src="../Images/borracha.jpg" alt="Gomma">
+                </div>
+            </div>
+        </div>
+        <div id="feedback" class="feedback"></div>
+        <script src="telaCliqueCertinhoItaliano_Js.js"></script>
+    </div>
+</body>
+
+</html>

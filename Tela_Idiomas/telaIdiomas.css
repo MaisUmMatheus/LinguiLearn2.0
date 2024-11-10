@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: rgba(74, 144, 226, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 700px;
+    position: relative;
+}
+
+.mascote-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    animation: subtleFloat 5s ease-in-out infinite;
+}
+
+.mascote-img {
+    width: 85px;
+    /* Aumentei o mascote para que fique visível, mas proporcional */
+    height: 85px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    /* Uma borda mais grossa para destacar */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    /* Sombra mais suave para destaque */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.language-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.language-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.language-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.language-item p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Animação sutil para o mascote */
+@keyframes subtleFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+        /* Movimento mais sutil para não ser exagerado */
+    }
+}

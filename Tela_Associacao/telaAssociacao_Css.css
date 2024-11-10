@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #8684f3;
+    /* Pêssego claro */
+    font-family: 'Fredoka', sans-serif;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+    border: 5px solid #f1848d;
+    /* Laranja vivo */
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #f18c8c;
+    /* Laranja escuro */
+    margin-bottom: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header p {
+    font-size: 1.3rem;
+    color: #8293f0;
+    /* Laranja suave */
+    margin-bottom: 25px;
+}
+
+.game-area {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.word-container {
+    font-size: 2rem;
+    color: #333;
+    background-color: #ff4f4f;
+    /* Amarelo vibrante */
+    padding: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.image-option {
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.image-option:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.image-option img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feedback {
+    margin-top: 20px;
+    font-size: 1.7rem;
+    color: #388e3c;
+    /* Verde escuro */
+    font-family: 'Quicksand', sans-serif;
+    animation: pop 0.5s ease;
+}
+
+.feedback p {
+    padding: 10px;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
